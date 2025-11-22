@@ -10,14 +10,7 @@ https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/
 import os
 
 from django.core.asgi import get_asgi_application
-from onlinequiz.wsgi import application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'onlinequiz.settings')
 
 application = get_asgi_application()
-
-
-
-# Vercel membutuhkan variable bernama `app`
-app = application
-

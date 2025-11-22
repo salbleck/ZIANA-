@@ -1,20 +1,20 @@
 {
-  "version": 2,                
+  "version": 2,
   "builds": [
     {
-      "src": "onlinequiz/wsgi.py",  
-      "use": "@vercel/python"       
+      "src": "api/index.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",              
-      "dest": "onlinequiz/wsgi.py"  
+      "src": "/(.*)",
+      "dest": "api/index.py"
     }
   ],
-  "env": {                           
-    "DJANGO_SECRET_KEY": "isi_secret_key",  
-    "DEBUG": "False",                       
-    "DATABASE_URL": "isi_url_database"     
+  "env": {
+    "DJANGO_SECRET_KEY": "isi_secret_key",
+    "DEBUG": "False",
+    "DATABASE_URL": "isi_url_database"
   }
 }
