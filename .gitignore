@@ -4,14 +4,3 @@
 *.pyc
 __pycache__/
 db.sqlite3
-staticfiles/
-
-# Virtual environment
-venv/
-
-# Static files hasil collectstatic
-staticfiles/
-
-# IDE / OS files
-.vscode/
-.DS_Store
